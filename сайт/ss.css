@@ -1,15 +1,45 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #9b07f0;
-    color: #000000;
-    padding: 50px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(131, 140, 143, 0.425); /* Прозрачный фон с альфа-каналом */
+  color: #000000; /* Цвет текста */
+  padding: 50px;
+}
+
+.log1 img {
+  max-width: 100%; /* Ограничивает ширину */
+  height: auto; /* Сохраняет пропорции */
+  margin-top: -20px; /* Поднимает изображение на 10 пикселей */
+} 
+
+button {
+  background-color: #151615; /* Цвет фона кнопки */
+  color: white; /* Цвет текста кнопки */
+  border: none; /* Убирает рамку */
+  padding: 15px 32px; /* Отступы внутри кнопки */
+  text-align: center; /* Выравнивание текста */
+  text-decoration: none; /* Убирает подчеркивание */
+  display: inline-block; /* Позволяет задавать размеры */
+  font-size: 16px; /* Размер шрифта */
+  font-family: 'Times New Roman', serif; /* Шрифт для кнопки */
+  margin: 4px 2px; /* Отступы вокруг кнопки */
+  cursor: pointer; /* Курсор при наведении */
+  border-radius: 4px; /* Скругление углов */
+  
+}
+
+body {
+  font-family: 'Times New Roman', sans-serif; /* Задает шрифт для всего тела страницы */
+}
+
+.title, .welcome {
+  font-family: 'Times New Roman', serif; /* Задает другой шрифт для заголовков */
+}
+
 
 .title {
     font-size: 40px;
-    
   }
   
 .welcome {
@@ -99,3 +129,12 @@ img{
     width: 110px;
     height: 20px;
   }
+
+  body {
+		background: #000 url(fon.jpg); /* Фоновый цвет и фоновый рисунок */
+    color: #fff; /* Цвет текста на странице */
+    background-attachment: fixed; /* Фон страницы фиксируется */
+    background-repeat: no-repeat; /* Изображение не повторяется */
+    background-size: cover; /* Изображение растягивается, чтобы покрыть весь фон */
+    background-position: center; /* Центрирует изображение */
+	}

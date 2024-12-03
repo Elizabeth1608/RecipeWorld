@@ -1,11 +1,22 @@
 <link rel="stylesheet" href="ss 2.css">
 <header>
-    <div class="title">Название</div>
+    <div class="title">Recipes World</div>
+    <div class="log1">
+        <img src="log1.png" alt="log1">
+        <img src="log1.png">
+    </div>
+    
     <div class="welcome">Рецепт</div>
-    <div class="logo">
-        <img src="logo.png" alt="Logo">
-        <img src="logo.png">
+        <h1 id="displayMessage"></h1>
     </div>
   </header>
+  <script>
+        
+        // Получение текста из localStorage и отображение на странице
+        document.addEventListener('DOMContentLoaded', function() {
+            const message = localStorage.getItem('message');
+            document.getElementById('displayMessage').innerText = message || 'Текст не найден.';
+        });
+    </script>
   
  

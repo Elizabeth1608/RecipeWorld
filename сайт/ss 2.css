@@ -1,6 +1,6 @@
 header {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     background-color: rgba(96, 102, 102, 0.425); /* Прозрачный фон с альфа-каналом */
     color: #000000;
@@ -17,16 +17,16 @@ header {
     font-size: 40px;
   }
   
-
   .displayMassage {
   text-align: center;
   font-size: 45px;
+  margin: 0px 200 0 50px;
   } 
 
 .welcome {
   font-size: 45px;
   font-weight: bold;
-  margin: 0px 200 0 50px;
+  margin: 0px 500 0 50px;
   }
   
 img{

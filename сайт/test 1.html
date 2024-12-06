@@ -1,67 +1,71 @@
 <link rel="stylesheet" href="ss.css">
 <header>
-    <div class="title">Название</div>
-    <div class="welcome">Добро пожаловать</div>
-    <div class="logo">
-        <img src="logo.png" alt="Logo">
-        <img src="logo.png">
+    <div class="title">Recipes World</div>
+    <div class="log1">
+        <img src="log1.png" alt="log1">
+        <img src="log1.png">
     </div>
   </header>
   
   <div class="content">
     <div class="dropdown-container">
       <div class="dropdown">
-        <button class="dropbtn">Супы</button>
+        <button class="dropbtn">Россия</button>
         <div class="dropdown-content">
-          <a href="borsh.html">Борщ</a>
-          <a href="уха.html">Уха</a>
-          <a href="рассольник.html">Рассольник</a>
-        </div>
-      </div>
-    </div>
-    <div class="dropdown-container">
-      <div class="dropdown">
-        <button class="dropbtn">Салаты</button>
-        <div class="dropdown-content">
+          <a href="#">Борщ</a>
           <a href="recipe1.html">Оливье</a>
-          <a href="shub.html">Селедь под шубой</a>
-          <a href="краб.html">крабовый</a>
+          <a href="#">Медовик</a>
+          <a href="#">Кулебяка с грибами</a>
         </div>
       </div>
     </div>
     <div class="dropdown-container">
       <div class="dropdown">
-        <button class="dropbtn">Каши</button>
+        <button class="dropbtn">Италия</button>
         <div class="dropdown-content">
-          <a href="#">Манная</a>
-          <a href="#">Гречневая</a>
-          <a href="#">Пшенная</a>
-          <a href="#">Рисовая</a>
+          <a href="#">Паста Карбонара</a>
+          <a href="#">Брускетта</a>
+          <a href="#">Панна Котта</a>
+          <a href="#">Пицца</a>
         </div>
       </div>
     </div>
     <div class="dropdown-container">
       <div class="dropdown">
-        <button class="dropbtn">Выпечка</button>
+        <button class="dropbtn">Япония</button>
         <div class="dropdown-content">
-          <a href="test 2.html"class="btn">Сосиска в тесте</a>
-          <a href="#">Булочка с маком</a>
-          <a href="#">Самса</a>
-          <a href="picca.html">Пицца</a>
+          <a href="#">Рамен</a>
+          <a href="#">Нигири</a>
+          <a href="#">Моти</a>
+          <a href="#">Тайяки</a>
         </div>
       </div>
     </div>
     <div class="dropdown-container">
       <div class="dropdown">
-        <button class="dropbtn">Напитки</button>
-        <div class="dropdown-content">
-          <a href="#">Йогурт</a>
-          <a href="#">Молочный коктель</a>
-          <a href="#">Квас</a>
+        <button class="dropbtn">Грузия</button>
+        <div class="dropdown-content">       
+          <a id = "myButton1">Чашушули</a>
+          <a id ="myButton2">Пхали</a>
+          <a id ="myButton3">Гозинаки</a>
+          <a id ="myButton4">Хачапури</a>
+          <script src="script JS.js"></script>
         </div>
       </div>
     </div>
-    <form class="forma" method="get">
-  <input class="s" placeholder="Искать здесь..." type="search">
-  <button class="submit">Поиск</button>
+    <div class="dropdown-container">
+      <div class="dropdown">
+        <button class="dropbtn">Франция</button>
+        <div class="dropdown-content">
+          <a href="#">Рататуй</a>
+          <a href="#">Тартар</a>
+          <a href="#">Клафути</a>
+          <a href="#">Киш</a>
+        </div>
+      </div>
+    </div>
+
+    <form class="forma" method="get" onsubmit="return searchRecipe(event)">
+  <input class="s" placeholder="Искать здесь..." type="search" id="searchInput">
+  <button class="submit" type="submit">Поиск</button>
 </form>

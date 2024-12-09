@@ -14,7 +14,7 @@
         <div class="dropdown-content">
           <a href="#">Борщ</a>
           <a href="recipe1.html">Оливье</a>
-          <a href="#">Медовик</a>
+          <a href="medovik.html">Медовик</a>
           <a href="#">Кулебяка с грибами</a>
         </div>
       </div>
@@ -49,7 +49,6 @@
           <a href="phali.html">Пхали</a>
           <a href="gozinaki.html">Гозинаки</a>
           <a href="hachapuri.html">Хачапури</a>
-          <script src="script JS.js"></script>
         </div>
       </div>
     </div>
@@ -65,9 +64,14 @@
       </div>
     </div>
 
-    <form class="forma" method="get">
-  <input class="s" placeholder="Искать здесь..." type="search">
-  <button class="submit">Поиск</button>
-</form>
+    <form class="forma" method="get" id="search-form">
+      <input class="s" placeholder="Искать здесь..." type="search" id="search-input">
+      <button type="button" class="submit" id="search-button">Поиск</button>
+  </form>
+
+  <div id="results-container"></div>
+</div>
+
+<script src="script JS.js"></script>
 
 

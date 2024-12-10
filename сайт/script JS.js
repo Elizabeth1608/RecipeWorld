@@ -34,4 +34,3 @@ document.getElementById('search-button').addEventListener('click', function() {
         alert('Рецепт не найден. Пожалуйста, попробуйте снова.');
     }
 });
-
